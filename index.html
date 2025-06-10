@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub Pages</title>
+  <meta name="viewport" content="width=900, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+      background: #222;
+      color: #fff;
+      min-height: 100vh;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px 40px 0 40px;
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+    .logo span {
+      font-weight: 400;
+      margin-left: 0.2em;
+      opacity: 0.8;
+    }
+    .help-btn {
+      background: #444;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 8px 18px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    .help-btn:hover {
+      background: #666;
+    }
+    .hero {
+      text-align: center;
+      margin-top: 60px;
+      margin-bottom: 40px;
+    }
+    .hero-title {
+      font-size: 2.8rem;
+      font-weight: 400;
+      margin-bottom: 18px;
+      letter-spacing: -1px;
+    }
+    .hero-desc {
+      font-size: 1.25rem;
+      color: #ccc;
+      margin-bottom: 40px;
+    }
+    .hero-desc a {
+      color: #58a6ff;
+      text-decoration: underline;
+    }
+    .mockup {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 32px;
+      margin-top: 30px;
+    }
+    .mockup-img {
+      background: #eee;
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+      width: 520px;
+      height: 260px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .mockup-img.mobile {
+      width: 180px;
+      height: 340px;
+      margin-left: -80px;
+      z-index: 1;
+    }
+    .mockup-img .b {
+      font-size: 5rem;
+      color: #6f42c1;
+      font-weight: bold;
+      background: #fff;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .mockup-img .browser-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 32px;
+      background: #f5f5f5;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      padding-left: 16px;
+      color: #888;
+      font-size: 1rem;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+    .footer {
+      text-align: center;
+      color: #888;
+      font-size: 1rem;
+      margin-top: 80px;
+      margin-bottom: 24px;
+      letter-spacing: 0.02em;
+    }
+    @media (max-width: 800px) {
+      .mockup {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+      }
+      .mockup-img {
+        width: 90vw;
+        min-width: 220px;
+        max-width: 98vw;
+        height: 160px;
+      }
+      .mockup-img.mobile {
+        width: 120px;
+        height: 220px;
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">GitHub <span>Pages</span></div>
+    <button class="help-btn">Pages Help</button>
+  </div>
+  <main>
+    <section class="hero">
+      <h1 class="hero-title">Websites for you and your projects.</h1>
+      <div class="hero-desc">
+        Hosted directly from your <a href="https://github.com/" target="_blank">GitHub repository</a>. Just edit, push, and your changes are live.
+      </div>
+      <div class="mockup">
+        <div class="mockup-img">
+          <div class="browser-bar">Bootstrap &nbsp; Getting started &nbsp; CSS &nbsp; Components &nbsp; JavaScript &nbsp; Customize</div>
+          <div class="b">B</div>
+        </div>
+        <div class="mockup-img mobile">
+          <div class="browser-bar">Bootstrap</div>
+          <div class="b">B</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="getting-started" style="max-width: 700px; margin: 0 auto 60px auto; background: #23272d; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.10); padding: 36px 32px;">
+    <h2 style="font-size: 2rem; font-weight: 500; margin-bottom: 18px; color: #fff;">Getting Started</h2>
+    <p style="color: #ccc; font-size: 1.1rem; margin-bottom: 18px;">
+      <strong>User or organization site</strong> &nbsp; <span style="color:#888;">Project site</span>
+    </p>
+    <ol style="color: #ccc; font-size: 1.1rem; margin-bottom: 18px; padding-left: 22px;">
+      <li style="margin-bottom: 12px;">
+        <strong>Create a repository</strong><br>
+        Head over to <a href="https://github.com/" target="_blank" style="color:#58a6ff;">GitHub</a> and create a new public repository named <code style="background:#181a1b; color:#fff; border-radius:4px; padding:2px 6px;">username.github.io</code>, where <em>username</em> is your username (or organization name) on GitHub.<br>
+        <span style="color:#888;">If the first part of the repository doesn’t exactly match your username, it won’t work, so make sure to get it right.</span>
+      </li>
+      <li style="margin-bottom: 12px;">
+        <strong>Clone the repository</strong><br>
+        Go to the folder where you want to store your project, and clone the new repository:
+        <pre style="background:#181a1b; color:#fff; border-radius:6px; padding:12px; margin:10px 0 0 0; font-size:1rem; overflow-x:auto;">git clone https://github.com/username/username.github.io</pre>
+      </li>
+      <li style="margin-bottom: 12px;">
+        <strong>Hello World</strong><br>
+        Enter the project folder and add an <code>index.html</code> file:
+        <pre style="background:#181a1b; color:#fff; border-radius:6px; padding:12px; margin:10px 0 0 0; font-size:1rem; overflow-x:auto;">cd username.github.io
+
+echo "Hello World" > index.html</pre>
+      </li>
+      <li style="margin-bottom: 12px;">
+        <strong>Push it</strong><br>
+        Add, commit, and push your changes:
+        <pre style="background:#181a1b; color:#fff; border-radius:6px; padding:12px; margin:10px 0 0 0; font-size:1rem; overflow-x:auto;">git add --all
+
+git commit -m "Initial commit"
+
+git push -u origin main</pre>
+      </li>
+      <li>
+        <strong>…and you're done!</strong><br>
+        Fire up a browser and go to <code>https://username.github.io</code>.
+      </li>
+    </ol>
+    <p style="color:#888; font-size:1rem; margin-top: 18px;">
+      Now that you’re up and running, here are a few things you should know.
+    </p>
+  </section>
+  <footer class="footer">
+    &copy; 2025 GitHub, Inc. &mdash; This is a demo recreation of the GitHub Pages landing page.
+  </footer>
+</body>
+</html>
