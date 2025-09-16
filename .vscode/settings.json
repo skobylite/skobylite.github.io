@@ -1,0 +1,12 @@
+{
+    "frontMatter.framework.id": "docusaurus",
+    "frontMatter.content.publicFolder": "static",
+    "frontMatter.preview.host": "http://localhost:3000",
+    "frontMatter.content.pageFolders": [
+        {
+            "title": "Content",
+            "path": "[[workspace]]/Content"
+        }
+    ],
+    "frontMatter.git.enabled": true
+}
